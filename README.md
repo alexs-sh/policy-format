@@ -52,7 +52,19 @@ allow super_module self:file { execute lock };
 super_module.te:      4: (S): Require block used in te file (use an interface call instead) (S-001)
 ```
 
+# Usage
 
+Format and print to stdout
+
+```
+policy-format input.te
+```
+
+Format and save output to a file
+
+```
+policy-format input.te output.te
+```
 
 # Build
 
